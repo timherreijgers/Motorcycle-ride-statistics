@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~ Copyright 2020 Tim Herreijgers
   ~
@@ -14,9 +15,14 @@
   ~    limitations under the License.
   -->
 
-<resources>
-    <string name="app_name">Motorcycle Ride Statistics</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-</resources>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="nl.timherreijgers.motorcycleridestatistics.fragments.MainFragment"
+        android:label="Track Ride"
+        tools:layout="@layout/fragment_main" />
+</navigation>

@@ -14,12 +14,13 @@
  *    limitations under the License.
  */
 
-package nl.timherreijgers.motorcycleridestatistics.sensors
+package nl.timherreijgers.motorcycleridestatistics.viewmodels
 
-class SensorContoller {
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
 
-    fun getGravitySensorData(): String {
-        return "Hoi"
-    }
+class MainFragmentViewModel : ViewModel() {
 
+    val mainText : MutableLiveData<String> = MutableLiveData()
 }
